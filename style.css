@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
+@font-face {
+    font-family: nasa;
+    src: url(./assets/Nasa.ttf);
+ }
+@keyframes cor{
+    20%{
+      filter: drop-shadow(7px 5px 5px rgb(224, 103, 235));
+    }
+    50%{
+      filter: drop-shadow(7px 5px 5px rgb(199, 44, 204));
+    }
+  
+   80%{
+      filter: drop-shadow(7px 5px 5px rgb(151, 40, 202));
+    }
+  }
+*{
+  box-sizing: border-box;
+}
+.body{
+  width: 100vw;
+  height: 100vh;
+  background-image:url(./assets/giphy.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:baseline;
+  flex-direction: column;
+  align-items:center;
+  gap:1em;
+  box-sizing:border-box;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+}
+.header h1{
+  font-size: 6.5rem;
+  font-family: nasa;
+  color: whitesmoke;
+  filter: drop-shadow(7px 8px 10px rgb(6, 247, 255));
+  animation:cor 8s infinite;
+  letter-spacing: 0.5em;
+}
+.header h2 {
+  font-size: 1.5em;
+  font-family: 'Yantramanav', sans-serif;
+  color: whitesmoke;
+}
+.buscaArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.BuscaData{
+  width: 9em;
+  height: 2.5em;
+  background:none;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+.botao{
+  background: none;
+  border:none;
+  width: 4em;
+  height: 4em;
+  filter: drop-shadow(7px 8px 10px rgb(6, 247, 255));
+  animation:cor 8s infinite;
+  cursor:pointer;
+}
+.botao img.img-default {
+  background: none;
+  width: 4em;
+  height: 4em;
+}
+.botao img.img-hover {
+  display: none;
+  background: none;
+  width: 4em;
+  height: 4em;
+}
+.botao:hover img.img-default {
+  display: none;
+  background: none;
+  width: 4em;
+  height: 4em;
+}
+.botao:hover img.img-hover {
+  display: inherit;
+  background: none;
+  width: 4em;
+  height: 4em;
+}
+.imagensETexto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap:1em;
+  height: 31em;
+  background: rgba(89, 236, 217, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(170, 176, 255, 0.37);
+    backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(253, 214, 214, 0.18);
+}
+.imagemResultado{
+  height: 30em;
+  width: 23em;
+  padding: 1em;
+  border-radius:20px;
+}
+.texto-eplicativo{
+  width: 22em;
+  color: whitesmoke;
+  padding: 1em;
+  overflow-y: scroll;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+}
+.esconde{
+  display: none;
+}
+.footer{
+  color: whitesmoke;
+  font-size: 1em;
+  font-family: 'Yantramanav', sans-serif;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+@media screen and (min-width:800px) and (max-width: 1366px){
+  .body{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+  .body{
+    height: 100vh;
+    width: 100%;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1{
+    font-size: 4.5rem;
+    font-family: nasa;
+    color: whitesmoke;
+    filter: drop-shadow(7px 8px 10px rgb(6, 247, 255));
+    animation: cor 8s infinite;
+    letter-spacing: 0.2em;
+  }
+  .header h2{
+    font-size: 1.2em;
+    font-family: 'Yantramanav', sans-serif;
+    color: whitesmoke;
+    padding: 0.8em;
+  }
+  .imagensETexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 31em;
+    background: rgba(89, 236, 217, 0.35);
+    box-shadow: 0 8px 32px 0 rgb(170 176 255 / 37%);
+    backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(253, 214, 214, 0.18);
+    flex-direction: column;
+    margin-left: -2em;
+  }
+  .imagemResultado{
+    height: 22em;
+    width: 20em;
+    padding: 1em;
+    border-radius: 20px;
+  }
+  .texto-eplicativo{
+    width: 20em;
+    color: whitesmoke;
+    padding: 1em;
+    overflow-y: scroll;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+  }
+}

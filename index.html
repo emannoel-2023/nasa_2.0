@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+    <title>Nasa</title>
+  </head>
+  <body>
+    <div class="body">
+      <header class="header">
+        <h1>Nasa</h1>
+        <h2>Busque a imagem Astronômica no calendário abaixo</h2>
+      </header>
+      <div class="buscaArea">
+        <input class="BuscaData" type="date" min="1995-06-16" max="dateNow" id="dataResult" title="Data minina: 1995-06-16" />
+        <button class="botao" id="dataValor" title="Buscar imagem">
+          <img class="img-default" src="./assets/rocket.png" />
+          <img class="img-hover" src="./assets/fast.png" />
+        </button>
+      </div>
+      <div class="imagensETexto">
+       <a target="_blank" id="imagemTamanhoReal"><img class="imagemResultado" id="imagem"/>
+        <iframe autoplay-="true" preload="auto" controls="true" id="video" class="esconde"></iframe></a>
+        <p class="texto-eplicativo" id="texto"></p>
+      </div>
+      <div class="footer">
+        <p>@ Davi Emannoel 2022</p>
+      </div>
+    </div>
+  </body>
+</html>
